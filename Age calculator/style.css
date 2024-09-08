@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color:#3758ed;
+}
+
+.inputbox-1,
+.inputbox-2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    border: 0px solid #3071fc;
+    height: 80px;
+    width: 550px;
+    justify-content: center;
+    position: static;
+    margin-left: 32%;
+    border-radius: 10px;
+    background-color: #3071fc;
+}
+
+.present-date,
+.dob {
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    background-color:#eeff59 ;
+    border: 0px solid #f0fc03;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Result1,
+#Result2,
+#Result3 {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 510px;
+    width: 550px;
+    margin-left: 355px;
+}
+
+.h1 {
+    width: 250px;
+    margin-left: 35%;
+    display: inline-block;
+    margin-top: 50px;
+    color: white;
+}
+
+h4{
+    color: #f0fc03;
+}
+
+#date-1,
+#date-2,
+#month-1,
+#month-2,
+#year-1,
+#year-2 {
+    height: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-weight:550;
+    color: white;
+}
+/* Media Queries for Responsiveness */
+/* For devices with screen width of 768px or less (tablets) */
+@media (max-width: 768px) {
+    .inputbox-1,
+    .inputbox-2 {
+        width: 80%;
+        margin-left: 10%;
+        height: 100px;
+    }
+
+    .present-date,
+    .dob {
+        margin-left: 10%;
+    }
+
+    #Result1,
+    #Result2,
+    #Result3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* .output{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    } */
+    .output {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .h1 {
+        margin-left: 10%;
+    }
+}
+
+/* For devices with screen width of 425px or less (mobile phones) */
+@media screen and (max-width: 425px) {
+    .inputbox-1,
+    .inputbox-2 {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        height: 200px;
+    }
+
+    .present-date,
+    .dob {
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .output {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .h1 {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #Result1,
+    #Result2,
+    #Result3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    button {
+        width: 50%;
+    }
+}
